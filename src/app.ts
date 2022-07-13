@@ -16,6 +16,9 @@ app.use(compression());
 /* ----------------------------- categoryRoutes ----------------------------- */
 import categoryRoutes from "./routes/categoryRoutes";
 app.use("/category", categoryRoutes);
+/* ------------------------------ productRoute ------------------------------ */
+import productRoutes from "./routes/productRoutes";
+app.use("/product", productRoutes);
 /* ----------------- database conecction and server startup ----------------- */
 mongoose
   .connect("mongodb://127.0.0.1:27017/crud-typescript")
